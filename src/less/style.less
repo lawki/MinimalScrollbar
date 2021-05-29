@@ -9,7 +9,9 @@
   z-index: 2147483647; // 0x7fffffff
 
   -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
   -webkit-transition: background .3s ease;
+  transition: background .3s ease;
 }
 
 #scrollbar-vertical,
@@ -72,6 +74,7 @@
     width: 0; height: 40%;
 
     -webkit-transition: height .3s ease, opacity .2s ease, visibility .2s 0s;
+    transition: height .3s ease, opacity .2s ease, visibility .2s 0s;
   }
 
   #scrollbar-horizontal:hover,
@@ -87,8 +90,8 @@
 html[data-minimalscrollbar="yes"]{
 
 ::-webkit-scrollbar {
-  width: 9px !important;
-  height: 9px !important;
+  width: 1rem !important;
+  height: 1rem !important;
 }
 
 ::-webkit-scrollbar-button:start:decrement,
@@ -115,15 +118,8 @@ html[data-minimalscrollbar="yes"]{
   background-color: rgba(0,0,0,.4) !important;
   z-index: 2147483647; // 0x7fffffff
   -webkit-border-radius: 12px;
-
+  border-radius: 12px;
   background-clip: content-box;
-
-  &:vertical{
-
-  }
-  &:horizontal{
-
-  }
 }
 
 ::-webkit-scrollbar-corner {
